@@ -1,0 +1,3 @@
+[submodule "Desktop/Patmos-master/extractor/annotator-server"]
+	path = Desktop/Patmos-master/extractor/annotator-server
+	url = https://github.com/alaodriss/Patmos.git

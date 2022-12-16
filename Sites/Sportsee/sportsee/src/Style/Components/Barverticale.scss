@@ -1,13 +1,13 @@
 .bar-Verticale{
   background-color: black;
-  width: 98px;
-  height: 718px;
+  width: 117px;
+  height: 793px;
   position: absolute;
 }
 .bars-vs{
   display: flex;
   flex-direction: column;
-  padding: 117px 9px;
+  padding: 56px 16px;
   list-style-type: none;
 }
 
@@ -17,9 +17,4 @@ a{
   color: white;
   text-decoration: none;
 }
-p{
-  color: white;
-  transform: rotate(271deg);
-  padding: -97px;
-  margin: -46px 0;
-}
+

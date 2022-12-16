@@ -1,15 +1,23 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
 import NavbarVer from "./Components/Barverticale";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+
+import Erreur from "./Pages/Erreur_404";
 
 function App() {
   return (
     <>
-        <Router>
-            <Navbar />
-            <NavbarVer />
-        </Router>
+      <BrowserRouter>
+        <Navbar />
+        <NavbarVer />
+        <Routes>
+          <Route path={"/"} exact element={<Home />} />
+          <Route path="/user/:userId" element={<Home />} />
+          <Route path={"*"} element={<Erreur />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

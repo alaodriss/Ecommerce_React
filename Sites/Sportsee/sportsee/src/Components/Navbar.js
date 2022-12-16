@@ -3,9 +3,10 @@ import '../Style/Components/navbar.scss'
 import { Link } from 'react-router-dom';
 
 function Navbar () {
+    // page de  navbar avec les components NavbarVer et Link => pour faire la redirectin vers les autres pages
         return (
             <>
-                <nav className='navbar'>
+                <div className='navbar'>
                     <div className="navbar-container">
                       <img src="/images/logo.png" alt="Logo"/>
                     </div>
@@ -17,7 +18,7 @@ function Navbar () {
                             <li> <Link to="/" className="nav-item"> Communauté </Link> </li>
                         </ul>
                     </div>
-                </nav>
+                </div>
             </>
         );
 }
